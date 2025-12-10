@@ -1,4 +1,4 @@
-# Mini Books Viewer – Pyramid
+# Mini Books Viewer - Pyramid
 
 A **minimal Pyramid web app** to display books from a Django SQLite database.
 This project is for **learning and study purposes**: no templates, no ORM, just plain SQL and HTML.
@@ -33,7 +33,7 @@ pip install pyramid waitress  # install Pyramid and Waitress
 
 ```
 pyramid_books/
-¦
+Å 
 +- app.py          # Main Pyramid application
 +- db.sqlite3      # SQLite database (copied from Django project)
 +- README.md       # This file
@@ -41,7 +41,7 @@ pyramid_books/
 
 ---
 
-## `app.py` – Overview
+## `app.py` - Overview
 
 * Uses **Pyramid** to handle HTTP requests
 * Uses **SQLite3** to read books and categories
