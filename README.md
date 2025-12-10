@@ -106,26 +106,6 @@ You will see a **simple HTML table** showing all books and their categories.
 
 ---
 
-## Learning Notes
-
-* Uses **raw SQL** instead of Django ORM for clarity
-* `sqlite3.Row` allows **accessing columns by name** (`book['title']`)
-* Demonstrates **LEFT JOIN** to fetch related category data
-* HTML is **generated dynamically in Python** (no templates)
-* Excellent for studying **web app request ? DB ? response flow**
-
----
-
-## Next Steps (optional)
-
-* Add more columns (like `summary` or `url`)
-* Paginate results for large tables
-* Switch to **SQLAlchemy ORM** for more advanced querying
-* Move HTML to a **template** (Jinja2) while keeping Pyramid
-* Convert to **API endpoint** returning JSON
-
----
-
 ## Full Source Code
 
 ```
@@ -209,6 +189,26 @@ if __name__ == "__main__":
     from waitress import serve
     serve(app, host="0.0.0.0", port=6543)
 ```
+
+---
+
+## Learning Notes
+
+* Uses **raw SQL** instead of Django ORM for clarity
+* `sqlite3.Row` allows **accessing columns by name** (`book['title']`)
+* Demonstrates **LEFT JOIN** to fetch related category data
+* HTML is **generated dynamically in Python** (no templates)
+* Excellent for studying **web app request ? DB ? response flow**
+
+---
+
+## Next Steps (optional)
+
+* Add more columns (like `summary` or `url`)
+* Paginate results for large tables
+* Switch to **SQLAlchemy ORM** for more advanced querying
+* Move HTML to a **template** (Jinja2) while keeping Pyramid
+* Convert to **API endpoint** returning JSON
 
 ---
 
